@@ -83,6 +83,6 @@ app.delete('/deleteTask', (req, res) => {
 })
 
 
-app.listen(3001, () => {
+app.listen(process.env.PORT || 3001, () => {
     console.log(`connected to port ${port}`)
 });
